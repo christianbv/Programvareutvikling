@@ -60,7 +60,7 @@ public class GoogleMapView extends AnchorPane {
     // MIN API-KEY, check https://cloud.google.com/maps-platform:
     // Denne bør overhodet ikke ligge sånn som dette i klartekst. Bør fikses på!
     // Hvordan må tas ved en senere sprint..
-	static String API_KEY = "AIzaSyC66RvhbPiRnpgzJLuNV7NLIVZc6_4eDiU";
+	static String API_KEY = "FOOBAR";
 
 
     private boolean usingCustomHtml;
