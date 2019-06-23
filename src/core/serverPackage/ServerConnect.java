@@ -65,12 +65,12 @@ public class ServerConnect {
 	}
 	
 	private String getConnectionString() {
-		String un = "vanligbruker";
-		String pw = "passord";
+		String un = "FOOBAR";
+		String pw = "FOOBAR";
 		
 		if(this.admin) {
-			 un = "christianbv1";
-			 pw = "passord";
+			 un = "FOOBAR";
+			 pw = "FOOBAR";
 		}
 		// Dette er meget dårlig programmeringspraksis og svært lite sikkert, API-keys kan ikke ligge slik i klartekst. 
 		// Forbedringspotensiale til senere sprinter!
