@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.Controller">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#toRegistrer" prefHeight="100.0" prefWidth="167.0" text="&lt;">
+                    <font>
+                        <Font size="45.0" />
+                    </font></Button>
+                <TextArea editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="673.0" text="           Admin">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </TextArea>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="504.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="91.0" prefWidth="505.0" text="Endre brukere">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="95.0" prefWidth="505.0" text="Slette brukere">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="76.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="95.0" prefWidth="505.0" text="Legge til nytt produkt">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="142.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="95.0" prefWidth="505.0" text="Legg til nytt community">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            <Button layoutX="10.0" layoutY="290.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="95.0" prefWidth="505.0" text="Statistikk">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

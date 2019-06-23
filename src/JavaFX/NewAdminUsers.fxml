@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.AdminUserController">
+   <top>
+      <HBox prefHeight="63.0" prefWidth="600.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="55.0" prefWidth="121.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LogoMakr_9NjeXZ.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane prefHeight="63.0" prefWidth="589.0">
+               <children>
+                  <TextField fx:id="nameBoks" alignment="CENTER" editable="false" layoutX="170.0" layoutY="7.0" prefHeight="48.0" prefWidth="243.0" style="-fx-background-color: transparent;" text="{null}">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane prefHeight="63.0" prefWidth="141.0">
+               <children>
+                  <Button contentDisplay="CENTER" layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#toLogin" text="Avslutt" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <padding>
+      <Insets bottom="5.0" />
+   </padding>
+   <bottom>
+      <HBox prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="58.0" prefWidth="712.0">
+               <children>
+                  <TextField fx:id="statusBoks" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="27.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="{crashed} - vennligst restart applikasjonen" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="pathBoks" alignment="CENTER" editable="false" layoutX="-1.0" layoutY="16.0" style="-fx-background-color: transparent;" text="--{null}" />
+               </children>
+            </Pane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="-5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="459.0" prefWidth="183.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="444.0" prefWidth="134.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="87.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="67.51150512695312" minHeight="5.765838623046875" prefHeight="9.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="109.23416137695312" minHeight="0.0" prefHeight="33.64947509765625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="197.35052490234375" minHeight="0.0" prefHeight="197.35052490234375" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="Dine valg:">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button alignment="CENTER" disable="true" mnemonicParsing="false" prefHeight="27.0" prefWidth="177.0" text="Brukere" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#toAdminCommunity" prefHeight="27.0" prefWidth="170.0" text="Nye communities" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#toAdminHistory" prefHeight="27.0" prefWidth="182.0" text="Historikk" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="279.0" prefWidth="12.0" style="-fx-background-color: lightgray;" />
+            <GridPane prefHeight="459.0" prefWidth="634.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="413.909912109375" minHeight="10.0" prefHeight="29.808792114257812" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="413.909912109375" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="223.70761108398438" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField editable="false" layoutY="12.0" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Alle brukere:" />
+                        <TextField fx:id="searchBoks" disable="true" layoutX="206.0" layoutY="12.0" onAction="#searchUser" promptText="Søk etter bruker.." />
+                        <Button disable="true" layoutX="382.0" layoutY="12.0" mnemonicParsing="false" onAction="#searchUser" text="Søk" />
+                     </children>
+                  </Pane>
+                  <TableView fx:id="tableId" prefHeight="277.0" prefWidth="573.0" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="34.97906494140625" text="Id">
+                      </TableColumn>
+                      	<TableColumn fx:id="firstNameCol" prefWidth="83.02098083496094" text="Fornavn">
+                        	
+                        </TableColumn>
+                      <TableColumn fx:id="surNameCol" maxWidth="123.16925048828125" prefWidth="88.74520874023438" text="Etternavn">
+                      
+                      </TableColumn>
+                        <TableColumn fx:id="emailCol" maxWidth="168.5079345703125" prefWidth="92.0855712890625" text="Email" />
+                        <TableColumn fx:id="phoneCol" maxWidth="168.5079345703125" prefWidth="113.76614379882812" text="Mob" />
+                        <TableColumn fx:id="regCol" maxWidth="188.3992919921875" prefWidth="81.23382568359375" text="Reg. dato" />
+                        <TableColumn fx:id="birthdayCol" maxWidth="116.998291015625" prefWidth="79.7242431640625" text="Bursdag" />
+                        <TableColumn fx:id="ratingCol" maxWidth="188.3992919921875" prefWidth="61.342041015625" text="Rating" />
+                    </columns>
+                  </TableView>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Button layoutX="466.0" layoutY="11.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="27.0" prefWidth="101.0" text="Slett bruker" />
+                        <Button layoutX="273.0" layoutY="10.0" mnemonicParsing="false" onAction="#removeSelected" prefHeight="27.0" prefWidth="100.0" text="Fjern valg" />
+                        <Button layoutX="74.0" layoutY="10.0" mnemonicParsing="false" onAction="#editUser" prefHeight="27.0" prefWidth="101.0" text="Endre bruker" />
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
